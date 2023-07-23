@@ -19,11 +19,9 @@ int CountMoreZiro(int[] array)
 int[] GenerateUserArray(int size)
 {
     int[] array = new int[size];
-    int num = 1;
     for (int i = 0; i < size; i++)
     {
-        Console.Write($"Введите {num}-е число: ");
-        array[i] = Convert.ToInt32(Console.ReadLine());
+        array[i] = GetInput($"Введите {i + 1}-е число: "); 
         num++;
     }
     return array;
